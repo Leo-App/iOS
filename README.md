@@ -4,12 +4,12 @@
 </p>
 
 <p align="center">
-    <a href="https://www.bitrise.io/app/<TODO>">
-        <img src="https://www.bitrise.io/app/<TODO>.svg?token=<TODO>&branch=stable"
+    <a href="https://www.bitrise.io/app/78aa373b873a53c0">
+        <img src="https://www.bitrise.io/app/78aa373b873a53c0/status.svg?token=nNoiHwas8ZAdVS65CRJNUw&branch=stable"
              alt="Build Status">
     </a>
     <a href="https://codebeat.co/projects/github-com-leo-app-ios-stable">
-        <img src="https://codebeat.co/badges/<TODO>"
+        <img src="https://codebeat.co/badges/09d99579-954f-4c52-882e-1bec94ba9007"
              alt="Codebeat Badge">
     </a>
     <img src="https://img.shields.io/badge/Swift-4.1-FFAC45.svg"
