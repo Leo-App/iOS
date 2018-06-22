@@ -40,7 +40,7 @@ file_header:
   required_pattern: |
                     \/\/
                     \/\/  Created by [^\(\)\d\n]+ on \d{1,2}\.\d{1,2}\.\d{2}\.
-                    \/\/  Copyright © \d{4} Jamit Labs GmbH\. All rights reserved\.
+                    \/\/  Copyright © \d{4} St. Leonhard Gymnasium\. All rights reserved\.
                     \/\/
 
 custom_rules:

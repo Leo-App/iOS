@@ -544,7 +544,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Jamit Labs GmbH";
+				ORGANIZATIONNAME = "St. Leonhard Gymnasium";
 				TargetAttributes = {
 					823F73B81ED84C3A0022317D = {
 						CreatedOnToolsVersion = 8.3.2;
