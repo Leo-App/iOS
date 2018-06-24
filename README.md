@@ -42,11 +42,14 @@ This repo includes the Leo-App for the iOS platform. You can find other parts of
 
 # Getting Started
 
-First, make sure you have **Xcode 9.3+** installed including command line tools.
+First, make sure you have **Xcode 9.3+** installed including command line tools. Next, install all required tools via [Homebrew](https://brew.sh/) like so:
 
-Next, install **Beak** – see [here](https://github.com/yonaskolb/Beak#installing) for installation instructions.
+```
+brew tap yonaskolb/Beak https://github.com/yonaskolb/Beak.git
+brew install bartycrouch beak carthage swiftgen swiftlint
+```
 
-Now **run** `beak run setupProject` to **set up** the project, tooling and third party libraries you need to build the project.
+Now **run** `beak run installDependencies` to set up the third party libraries.
 
 That's it, you're good to go.
 

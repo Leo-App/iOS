@@ -144,6 +144,9 @@
 		82F2BF7820DBBD8F009D037D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		82F2BF8020DBC806009D037D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		A146F9DA20E032C0008BBA45 /* SwiftGen-Colors.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SwiftGen-Colors.stencil"; sourceTree = "<group>"; };
+		A146F9DC20E0385B008BBA45 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
+		A146F9DD20E0385B008BBA45 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		A146F9DE20E0385B008BBA45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,9 @@
 				2E55F0BC20ABBE11000949CF /* Cartfile.ignore */,
 				823F741E1ED861430022317D /* Cartfile.private */,
 				823F74201ED861E80022317D /* Cartfile.resolved */,
+				A146F9DC20E0385B008BBA45 /* CONDUCT.md */,
+				A146F9DD20E0385B008BBA45 /* LICENSE.md */,
+				A146F9DE20E0385B008BBA45 /* README.md */,
 				A146F9DA20E032C0008BBA45 /* SwiftGen-Colors.stencil */,
 			);
 			name = RootFiles;
