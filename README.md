@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-    <a href="https://www.bitrise.io/app/78aa373b873a53c0">
-        <img src="https://www.bitrise.io/app/78aa373b873a53c0/status.svg?token=nNoiHwas8ZAdVS65CRJNUw&branch=stable"
+    <a href="https://app.bitrise.io/app/26e04c60fc574e09">
+        <img src="https://app.bitrise.io/app/26e04c60fc574e09/status.svg?token=p-4s0GdMP-474Ah6b8eLxg&branch=stable"
              alt="Build Status">
     </a>
     <a href="https://codebeat.co/projects/github-com-leo-app-ios-stable">
@@ -38,20 +38,38 @@ The iOS counterpart of the LeoApp project on Android ([Play Store Link](https://
 This repo includes the Leo-App for the iOS platform. You can find other parts of the Leo-App project [here](https://github.com/Leo-App).
 
 
-## Development
+## Requirements
 
-# Getting Started
+We recommend installing command line tools via
+[Homebrew](https://brew.sh/index_de.html) and [Mint](https://github.com/yonaskolb/Mint), respectively:
 
-First, make sure you have **Xcode 9.3+** installed including command line tools. Next, install all required tools via [Homebrew](https://brew.sh/) like so:
+* Install [Carthage](https://github.com/Carthage/Carthage) (`brew install carthage`)
+* Install [SwiftGen](https://github.com/SwiftGen/SwiftGen) (`brew install swiftgen`)
+* Install [SwiftLint](https://github.com/realm/SwiftLint) (`brew install swiftlint`)
+* Install [ProjLint](https://github.com/JamitLabs/ProjLint) (`mint install JamitLabs/ProjLint`)
+* Install [BartyCrouch](https://github.com/Flinesoft/BartyCrouch) (`brew install bartycrouch`)
+* Install [Beak](https://github.com/yonaskolb) (`mint install yonaskolb/beak`)
+
+It is recommended to install forks for Carthage and SwiftLint. To do this, run:
 
 ```
-brew tap yonaskolb/Beak https://github.com/yonaskolb/Beak.git
-brew install bartycrouch beak carthage swiftgen swiftlint
+$ brew remove --force swiftlint
+$ mint install git@github.com:Dschee/SwiftLint.git@master swiftlint
+
+$ brew remove --force carthage
+$ brew tap Dschee/Carthage-Pro
+$ brew install carthage-pro
 ```
 
-Now **run** `beak run installDependencies` to set up the third party libraries.
+## Getting Started
 
-That's it, you're good to go.
+After checking the project out, run this in the project folder:
+
+```
+beak run installDependencies
+```
+
+Then you should be ready to go!
 
 
 ## Contributing
