@@ -16,7 +16,7 @@
          alt="Swift: 4.1">
     <img src="https://img.shields.io/badge/Platforms-iOS-FF69B4.svg"
         alt="Platforms: iOS">
-    <a href="https://github.com/Leo-App/iOS/blob/stable/LICENSE.md">
+    <a href="https://github.com/Leo-App/iOS/blob/stable/LICENSE">
         <img src="https://img.shields.io/badge/License-GPL--3.0-lightgrey.svg"
              alt="License: GPL-3.0">
     </a>
