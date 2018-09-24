@@ -17,4 +17,4 @@ github "Moya/Moya" ~> 11.0
 github "SwiftyBeaver/SwiftyBeaver" ~> 1.5
 
 # Modern Swift API for NSUserDefaults
-github "radex/SwiftyUserDefaults" ~> 4.0
+github "radex/SwiftyUserDefaults" "4.0.0-alpha.1"
