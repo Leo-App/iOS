@@ -29,10 +29,12 @@ internal enum Asset {
   }
   internal enum Text {
     internal static let darkText = ColorAsset(name: "DarkText")
+    internal static let grayText = ColorAsset(name: "GrayText")
     internal static let lightText = ColorAsset(name: "LightText")
   }
   internal enum Theme {
     internal static let accent = ColorAsset(name: "Accent")
+    internal static let background = ColorAsset(name: "Background")
     internal static let primary = ColorAsset(name: "Primary")
     internal static let secondary = ColorAsset(name: "Secondary")
   }
@@ -43,8 +45,10 @@ internal enum Asset {
     Feedback.success,
     Feedback.warning,
     Text.darkText,
+    Text.grayText,
     Text.lightText,
     Theme.accent,
+    Theme.background,
     Theme.primary,
     Theme.secondary,
   ]

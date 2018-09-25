@@ -39,6 +39,9 @@
 		82F2BF7220DBBA7E009D037D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82F2BF7420DBBA7E009D037D /* InfoPlist.strings */; };
 		82F2BF7920DBBD8F009D037D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7720DBBD8F009D037D /* Moya.framework */; };
 		82F2BF7A20DBBD8F009D037D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7820DBBD8F009D037D /* Alamofire.framework */; };
+		A138FDD9215A6B0C002E9F10 /* BottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */; };
+		A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */; };
+		A138FDDF215A6FB9002E9F10 /* BottomNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +146,9 @@
 		82F2BF7820DBBD8F009D037D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		82F2BF8020DBC806009D037D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		A1224CF121594BE8006D5B46 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
+		A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationController.swift; sourceTree = "<group>"; };
+		A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
+		A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomNavigationController.storyboard; sourceTree = "<group>"; };
 		A146F9DA20E032C0008BBA45 /* SwiftGen-Colors.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SwiftGen-Colors.stencil"; sourceTree = "<group>"; };
 		A146F9DC20E0385B008BBA45 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
 		A146F9DE20E0385B008BBA45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -370,6 +376,7 @@
 		8298175B20DBB5C00021ED19 /* ScreenFlows */ = {
 			isa = PBXGroup;
 			children = (
+				A138FDD5215A69FB002E9F10 /* BottomNavigation */,
 				8298175C20DBB5D90021ED19 /* Main */,
 			);
 			path = ScreenFlows;
@@ -480,6 +487,24 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A138FDD5215A69FB002E9F10 /* BottomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */,
+				A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */,
+				A138FDE0215A6FBF002E9F10 /* Views */,
+			);
+			path = BottomNavigation;
+			sourceTree = "<group>";
+		};
+		A138FDE0215A6FBF002E9F10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A15C138E215A4BF300F1AA25 /* Extensions */ = {
@@ -616,6 +641,7 @@
 				823F74141ED853BE0022317D /* Localizable.strings in Resources */,
 				823F74041ED84DAC0022317D /* Images.xcassets in Resources */,
 				823F74091ED84DAC0022317D /* Main.storyboard in Resources */,
+				A138FDDF215A6FB9002E9F10 /* BottomNavigationController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +759,9 @@
 				823F74061ED84DAC0022317D /* ViewController.swift in Sources */,
 				823F743D1ED8679D0022317D /* Strings.swift in Sources */,
 				823F743B1ED8679D0022317D /* Colors.swift in Sources */,
+				A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */,
 				82CC295620DBDB2000C61C6E /* Progress.swift in Sources */,
+				A138FDD9215A6B0C002E9F10 /* BottomNavigationController.swift in Sources */,
 				82CC295720DBDB2000C61C6E /* Logger.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
 				82CC295820DBDB2000C61C6E /* Branding.swift in Sources */,

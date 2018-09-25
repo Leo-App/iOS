@@ -53,6 +53,11 @@ internal extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum BottomNavigationController: StoryboardType {
+    internal static let storyboardName = "BottomNavigationController"
+
+    internal static let initialScene = InitialSceneType<App.BottomNavigationController>(storyboard: BottomNavigationController.self)
+  }
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
