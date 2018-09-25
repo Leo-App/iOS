@@ -1,5 +1,5 @@
 shared_variables:
-  rightholder: Leo-App
+  rightholder: Cihat Gündüz
   project_name: LeoApp
 
 rules:
@@ -136,7 +136,7 @@ rules:
         - .gitignore
         - .swiftlint.yml
         - README.md
-        - LICENSE.md
+        - LICENSE
         - Cartfile
         - Cartfile.private
         - Cartfile.ignore

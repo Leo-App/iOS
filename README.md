@@ -12,8 +12,8 @@
         <img src="https://codebeat.co/badges/09d99579-954f-4c52-882e-1bec94ba9007"
              alt="Codebeat Badge">
     </a>
-    <img src="https://img.shields.io/badge/Swift-4.1-FFAC45.svg"
-         alt="Swift: 4.1">
+    <img src="https://img.shields.io/badge/Swift-4.2-FFAC45.svg"
+         alt="Swift: 4.2">
     <img src="https://img.shields.io/badge/Platforms-iOS-FF69B4.svg"
         alt="Platforms: iOS">
     <a href="https://github.com/Leo-App/iOS/blob/stable/LICENSE">
