@@ -58,11 +58,6 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<App.BottomNavigationController>(storyboard: BottomNavigationController.self)
   }
-  internal enum Main: StoryboardType {
-    internal static let storyboardName = "Main"
-
-    internal static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
-  }
 }
 
 internal enum StoryboardSegue {
