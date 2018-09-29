@@ -7,10 +7,24 @@ import Imperio
 import UIKit
 
 class BottomNavigationFlowController: InitialFlowController {
-    private var bottomNavigationController: BottomNavigationController?
+    private var bottomNavigationViewController: BottomNavigationViewController?
+    private var bottomSheetViewController: BottomSheetViewController?
 
     override func start(from window: UIWindow) {
-        bottomNavigationController = StoryboardScene.BottomNavigationController.initialScene.instantiate()
-        window.rootViewController = bottomNavigationController
+        bottomNavigationViewController = StoryboardScene.BottomNavigation.initialScene.instantiate()
+        window.rootViewController = bottomNavigationViewController
+
+        bottomNavigationViewController?.flowDelegate = self
+    }
+}
+
+extension BottomNavigationFlowController: BottomNavigationFlowDelegate {
+    func menuButtonPressed() {
+        bottomSheetViewController = StoryboardScene.BottomSheet.initialScene.instantiate()
+        bottomNavigationViewController?.present(bottomSheetViewController!, animated: true, completion: nil)
+    }
+
+    func profileButtonPressed() {
+        // TODO: not yet implemented
     }
 }

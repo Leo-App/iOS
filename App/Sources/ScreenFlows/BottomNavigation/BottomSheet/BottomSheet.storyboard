@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YCM-ps-mIi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom Sheet View Controller-->
+        <scene sceneID="67G-m4-GGe">
+            <objects>
+                <viewController id="YCM-ps-mIi" customClass="BottomSheetViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2g5-jt-VAR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUo-I9-6dV" customClass="BottomSheetHeaderView" customModule="App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="hfZ-PZ-tr4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Max Mustermann"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="maxmus010101"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="profilePlaceholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VuP-4g-aJO">
+                                <rect key="frame" x="0.0" y="78" width="414" height="684"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YCM-ps-mIi" id="2Q3-ZI-J5p"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VuP-4g-aJO" firstAttribute="bottom" secondItem="02i-xh-RkT" secondAttribute="bottom" id="7Ex-kK-TVT"/>
+                            <constraint firstItem="VuP-4g-aJO" firstAttribute="trailing" secondItem="02i-xh-RkT" secondAttribute="trailing" id="AsI-Yt-ad9"/>
+                            <constraint firstItem="VuP-4g-aJO" firstAttribute="top" secondItem="bUo-I9-6dV" secondAttribute="bottom" id="CaX-lx-l7i"/>
+                            <constraint firstItem="bUo-I9-6dV" firstAttribute="top" secondItem="2g5-jt-VAR" secondAttribute="top" id="UHL-gf-HVZ"/>
+                            <constraint firstItem="bUo-I9-6dV" firstAttribute="trailing" secondItem="02i-xh-RkT" secondAttribute="trailing" id="e1Y-LO-g0D"/>
+                            <constraint firstItem="bUo-I9-6dV" firstAttribute="leading" secondItem="02i-xh-RkT" secondAttribute="leading" id="hcZ-15-kfi"/>
+                            <constraint firstItem="VuP-4g-aJO" firstAttribute="leading" secondItem="02i-xh-RkT" secondAttribute="leading" id="kkV-II-h2l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="02i-xh-RkT"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="762"/>
+                    <connections>
+                        <outlet property="tableView" destination="VuP-4g-aJO" id="HW3-iq-bsy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADu-G6-blU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="-317.09145427286359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profilePlaceholder" width="24" height="24"/>
+    </resources>
+</document>

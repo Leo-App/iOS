@@ -38,9 +38,16 @@
 		82F2BF7920DBBD8F009D037D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7720DBBD8F009D037D /* Moya.framework */; };
 		82F2BF7A20DBBD8F009D037D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7820DBBD8F009D037D /* Alamofire.framework */; };
 		A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */; };
-		A138FDD9215A6B0C002E9F10 /* BottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */; };
+		A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E82160025D00140107 /* BottomSheetViewController.swift */; };
+		A10E13EB2160027000140107 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E13EA2160027000140107 /* BottomSheet.storyboard */; };
+		A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */; };
+		A10E13EF216003AE00140107 /* BottomSheetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */; };
+		A10E13F121600EF000140107 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13F021600EF000140107 /* NibDesignable.swift */; };
+		A10E13F4216016C700140107 /* NibDesignableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13F3216016C700140107 /* NibDesignableProtocol.swift */; };
+		A10E13F92160219E00140107 /* BottomSheetModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13F82160219E00140107 /* BottomSheetModelController.swift */; };
+		A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDD8215A6B0C002E9F10 /* BottomNavigationViewController.swift */; };
 		A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */; };
-		A138FDDF215A6FB9002E9F10 /* BottomNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */; };
+		A138FDDF215A6FB9002E9F10 /* BottomNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A138FDDE215A6FB9002E9F10 /* BottomNavigation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,10 +148,17 @@
 		82F2BF7720DBBD8F009D037D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		82F2BF7820DBBD8F009D037D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationFlowController.swift; sourceTree = "<group>"; };
+		A10E13E82160025D00140107 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		A10E13EA2160027000140107 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
+		A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeaderView.swift; sourceTree = "<group>"; };
+		A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetHeaderView.xib; sourceTree = "<group>"; };
+		A10E13F021600EF000140107 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		A10E13F3216016C700140107 /* NibDesignableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignableProtocol.swift; sourceTree = "<group>"; };
+		A10E13F82160219E00140107 /* BottomSheetModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModelController.swift; sourceTree = "<group>"; };
 		A1224CF121594BE8006D5B46 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
-		A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationController.swift; sourceTree = "<group>"; };
+		A138FDD8215A6B0C002E9F10 /* BottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationViewController.swift; sourceTree = "<group>"; };
 		A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
-		A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomNavigationController.storyboard; sourceTree = "<group>"; };
+		A138FDDE215A6FB9002E9F10 /* BottomNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomNavigation.storyboard; sourceTree = "<group>"; };
 		A146F9DA20E032C0008BBA45 /* SwiftGen-Colors.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SwiftGen-Colors.stencil"; sourceTree = "<group>"; };
 		A146F9DC20E0385B008BBA45 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
 		A146F9DE20E0385B008BBA45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -457,6 +471,7 @@
 				82CC294E20DBDB2000C61C6E /* Logger.swift */,
 				82CC294D20DBDB2000C61C6E /* Progress.swift */,
 				A15C138E215A4BF300F1AA25 /* Extensions */,
+				A10E13F2216016B400140107 /* NibDesignable */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -475,23 +490,37 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A10E13F2216016B400140107 /* NibDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				A10E13F021600EF000140107 /* NibDesignable.swift */,
+				A10E13F3216016C700140107 /* NibDesignableProtocol.swift */,
+			);
+			path = NibDesignable;
+			sourceTree = "<group>";
+		};
+		A10E13F721601E2D00140107 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A10E13EA2160027000140107 /* BottomSheet.storyboard */,
+				A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */,
+				A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */,
+				A10E13F82160219E00140107 /* BottomSheetModelController.swift */,
+				A10E13E82160025D00140107 /* BottomSheetViewController.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
 		A138FDD5215A69FB002E9F10 /* BottomNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				A138FDDE215A6FB9002E9F10 /* BottomNavigation.storyboard */,
+				A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */,
 				A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */,
-				A138FDDE215A6FB9002E9F10 /* BottomNavigationController.storyboard */,
-				A138FDD8215A6B0C002E9F10 /* BottomNavigationController.swift */,
-				A138FDE0215A6FBF002E9F10 /* Views */,
+				A138FDD8215A6B0C002E9F10 /* BottomNavigationViewController.swift */,
+				A10E13F721601E2D00140107 /* BottomSheet */,
 			);
 			path = BottomNavigation;
-			sourceTree = "<group>";
-		};
-		A138FDE0215A6FBF002E9F10 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A15C138E215A4BF300F1AA25 /* Extensions */ = {
@@ -621,11 +650,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8298176220DBB6960021ED19 /* Colors.xcassets in Resources */,
+				A10E13EB2160027000140107 /* BottomSheet.storyboard in Resources */,
 				82F2BF7220DBBA7E009D037D /* InfoPlist.strings in Resources */,
 				823F74081ED84DAC0022317D /* LaunchScreen.storyboard in Resources */,
+				A10E13EF216003AE00140107 /* BottomSheetHeaderView.xib in Resources */,
 				823F74141ED853BE0022317D /* Localizable.strings in Resources */,
 				823F74041ED84DAC0022317D /* Images.xcassets in Resources */,
-				A138FDDF215A6FB9002E9F10 /* BottomNavigationController.storyboard in Resources */,
+				A138FDDF215A6FB9002E9F10 /* BottomNavigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,13 +709,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NibDesignable.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		823F74351ED866BF0022317D /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -698,7 +730,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen > /dev/null; then\n    swiftgen strings \"$PROJECT_DIR/App/Resources/en.lproj/Localizable.strings\" -t structured-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Strings.swift\"\n    swiftgen storyboards \"$PROJECT_DIR/App/Sources\" -t swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Storyboards.swift\"\n    swiftgen xcassets \"$PROJECT_DIR/App/Resources/Colors.xcassets\" -p \"$PROJECT_DIR/SwiftGen-Colors.stencil\" -o \"$PROJECT_DIR/App/Generated/SwiftGen/Colors.swift\"\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
+			shellScript = "if which swiftgen > /dev/null; then\n    swiftgen strings \"$PROJECT_DIR/App/Resources/en.lproj/Localizable.strings\" -t structured-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Strings.swift\"\n    swiftgen ib \"$PROJECT_DIR/App/Sources\" -t scenes-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Storyboards.swift\"\n    swiftgen xcassets \"$PROJECT_DIR/App/Resources/Colors.xcassets\" -p \"$PROJECT_DIR/SwiftGen-Colors.stencil\" -o \"$PROJECT_DIR/App/Generated/SwiftGen/Colors.swift\"\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
 		};
 		823F74371ED867750022317D /* BartyCrouch */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -740,15 +772,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				823F743C1ED8679D0022317D /* Storyboards.swift in Sources */,
+				A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */,
 				823F743D1ED8679D0022317D /* Strings.swift in Sources */,
 				823F743B1ED8679D0022317D /* Colors.swift in Sources */,
 				A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */,
 				82CC295620DBDB2000C61C6E /* Progress.swift in Sources */,
-				A138FDD9215A6B0C002E9F10 /* BottomNavigationController.swift in Sources */,
+				A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */,
 				82CC295720DBDB2000C61C6E /* Logger.swift in Sources */,
+				A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */,
+				A10E13F4216016C700140107 /* NibDesignableProtocol.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
 				82CC295820DBDB2000C61C6E /* Branding.swift in Sources */,
+				A10E13F121600EF000140107 /* NibDesignable.swift in Sources */,
 				A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */,
+				A10E13F92160219E00140107 /* BottomSheetModelController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
