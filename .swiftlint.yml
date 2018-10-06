@@ -303,12 +303,6 @@ custom_rules:
     name: "Remove Where for Negative Filtering"
     message: "Use `remove(where:)` instead of `filter(where not ...)` for performance."
     severity: warning
-  self_conditional_binding:
-    included: ".*.swift"
-    regex: '\s+`?\w+`?(?<! strongSelf)\s*=\s*self\s'
-    name: "Self Conditional Binding"
-    message: "Constants with conditional binding on `self` should be named `strongSelf`."
-    severity: warning
   single_line_enum_cases:
     included: ".*.swift"
     regex: 'enum [^\{]+\{\s*(?:\s*\/\/[^\n]*)*\s*case\s+[^,(\n]+,'

@@ -6,10 +6,20 @@
 import UIKit
 
 @IBDesignable
-class BottomSheetHeaderView: NibDesignable {
+class BottomSheetHeaderView: UIView, NibLoadable {
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadFromNib()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        loadFromNib()
+    }
 
     @IBInspectable var title: String? {
         didSet {

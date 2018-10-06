@@ -2,6 +2,7 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 // swiftlint:disable sorted_imports
+import Foundation
 import UIKit
 
 // swiftlint:disable superfluous_disable_command

@@ -14,7 +14,3 @@ class BottomSheetViewController: UIViewController {
         }
     }
 }
-
-extension BottomSheetModelController: UITableViewDelegate {
-    // TODO: not yet implemented
-}
