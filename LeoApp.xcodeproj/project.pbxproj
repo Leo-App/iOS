@@ -43,10 +43,11 @@
 		A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */; };
 		A10E13EF216003AE00140107 /* BottomSheetHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */; };
 		A10E13F121600EF000140107 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13F021600EF000140107 /* NibLoadable.swift */; };
-		A10E13F92160219E00140107 /* BottomSheetModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13F82160219E00140107 /* BottomSheetModelController.swift */; };
 		A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDD8215A6B0C002E9F10 /* BottomNavigationViewController.swift */; };
 		A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */; };
 		A138FDDF215A6FB9002E9F10 /* BottomNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A138FDDE215A6FB9002E9F10 /* BottomNavigation.storyboard */; };
+		A182B22E21752AE800303536 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182B22D21752AE800303536 /* UIImageExtension.swift */; };
+		A182B2332175371C00303536 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182B2322175371C00303536 /* UIViewExtension.swift */; };
 		A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */; };
 		A1ED16CC2169028100C4C317 /* BottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */; };
 		A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16CF2169133500C4C317 /* ModuleManager.swift */; };
@@ -156,7 +157,6 @@
 		A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeaderView.swift; sourceTree = "<group>"; };
 		A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetHeaderView.xib; sourceTree = "<group>"; };
 		A10E13F021600EF000140107 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
-		A10E13F82160219E00140107 /* BottomSheetModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModelController.swift; sourceTree = "<group>"; };
 		A1224CF121594BE8006D5B46 /* .projlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .projlint.yml; sourceTree = "<group>"; };
 		A138FDD8215A6B0C002E9F10 /* BottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationViewController.swift; sourceTree = "<group>"; };
 		A138FDDA215A6B19002E9F10 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
@@ -165,6 +165,8 @@
 		A146F9DC20E0385B008BBA45 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
 		A146F9DE20E0385B008BBA45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A15C138D215A4B6E00F1AA25 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A182B22D21752AE800303536 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		A182B2322175371C00303536 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
 		A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTableViewCell.xib; sourceTree = "<group>"; };
 		A1ED16CF2169133500C4C317 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
@@ -474,12 +476,12 @@
 		82CC294920DBDB2000C61C6E /* Globals */ = {
 			isa = PBXGroup;
 			children = (
-				A10E13F021600EF000140107 /* NibLoadable.swift */,
 				82CC294F20DBDB2000C61C6E /* Branding.swift */,
 				82CC294E20DBDB2000C61C6E /* Logger.swift */,
+				A1ED16CF2169133500C4C317 /* ModuleManager.swift */,
+				A10E13F021600EF000140107 /* NibLoadable.swift */,
 				82CC294D20DBDB2000C61C6E /* Progress.swift */,
 				A15C138E215A4BF300F1AA25 /* Extensions */,
-				A1ED16CF2169133500C4C317 /* ModuleManager.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -504,7 +506,6 @@
 				A10E13EA2160027000140107 /* BottomSheet.storyboard */,
 				A10E13EC2160039C00140107 /* BottomSheetHeaderView.swift */,
 				A10E13EE216003AE00140107 /* BottomSheetHeaderView.xib */,
-				A10E13F82160219E00140107 /* BottomSheetModelController.swift */,
 				A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */,
 				A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */,
 				A10E13E82160025D00140107 /* BottomSheetViewController.swift */,
@@ -527,6 +528,8 @@
 		A15C138E215A4BF300F1AA25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A182B22D21752AE800303536 /* UIImageExtension.swift */,
+				A182B2322175371C00303536 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -778,6 +781,7 @@
 				A1ED16D22169139800C4C317 /* Module.swift in Sources */,
 				823F743D1ED8679D0022317D /* Strings.swift in Sources */,
 				823F743B1ED8679D0022317D /* Colors.swift in Sources */,
+				A182B22E21752AE800303536 /* UIImageExtension.swift in Sources */,
 				A138FDDB215A6B19002E9F10 /* BottomNavigationBar.swift in Sources */,
 				82CC295620DBDB2000C61C6E /* Progress.swift in Sources */,
 				A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */,
@@ -785,10 +789,10 @@
 				A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */,
 				A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
+				A182B2332175371C00303536 /* UIViewExtension.swift in Sources */,
 				82CC295820DBDB2000C61C6E /* Branding.swift in Sources */,
 				A10E13F121600EF000140107 /* NibLoadable.swift in Sources */,
 				A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */,
-				A10E13F92160219E00140107 /* BottomSheetModelController.swift in Sources */,
 				A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

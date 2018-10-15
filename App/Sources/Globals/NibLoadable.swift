@@ -8,9 +8,11 @@ import UIKit
 
 protocol NibLoadable: class {
     static var nibName: String { get }
+
+    func nibDidLoad()
 }
 
-extension NibLoadable {
+extension NibLoadable where Self: UIView {
     /// The name of the nib file. Defaults to the same name as the class.
     static var nibName: String {
         return String(describing: self)
@@ -20,10 +22,6 @@ extension NibLoadable {
     ///
     /// NOTE: This view must be the 'File's Owner', not the 'View' within the Nib file.
     func loadFromNib() {
-        guard let viewSelf = self as? UIView else {
-            fatalError("Only subclasses of type `UIView` can conform to `NibLoadable` - `\(String(describing: self))` isn't a `UIView` subclass.")
-        }
-
         let bundle = Bundle(for: type(of: self))
         let nibName = type(of: self).nibName
         let nib = UINib(nibName: nibName, bundle: bundle)
@@ -40,7 +38,11 @@ extension NibLoadable {
         }
 
         let viewFromNib = views[0]
-        viewSelf.addSubview(viewFromNib)
+        addSubview(viewFromNib)
         viewFromNib.bindEdgesToSuperview()
+
+        nibDidLoad()
     }
+
+    func nibDidLoad() { /* no-op */ }
 }

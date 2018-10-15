@@ -7,20 +7,6 @@ import UIKit
 
 @IBDesignable
 class BottomSheetHeaderView: UIView, NibLoadable {
-    @IBOutlet private var imageView: UIImageView!
-    @IBOutlet private var titleLabel: UILabel!
-    @IBOutlet private var subtitleLabel: UILabel!
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        loadFromNib()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        loadFromNib()
-    }
-
     @IBInspectable var title: String? {
         didSet {
             titleLabel.text = title
@@ -35,7 +21,35 @@ class BottomSheetHeaderView: UIView, NibLoadable {
 
     @IBInspectable var image: UIImage? {
         didSet {
-            imageView.image = image
+            updateImage()
+        }
+    }
+
+    @IBInspectable var highlighted: Bool = false {
+        didSet {
+            updateImage()
+        }
+    }
+
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subtitleLabel: UILabel!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadFromNib()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        loadFromNib()
+    }
+
+    private func updateImage() {
+        if highlighted {
+            imageView.image = image?.templateImage(color: Asset.Text.lightText.color)
+        } else {
+            imageView.image = image?.templateImage(color: Asset.Text.grayText.color)
         }
     }
 }

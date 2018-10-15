@@ -112,6 +112,7 @@ type_contents_order:
     - [type_alias, associated_type]
     - subtype
     - type_property
+    - ib_inspectable
     - instance_property
     - ib_outlet
     - initializer

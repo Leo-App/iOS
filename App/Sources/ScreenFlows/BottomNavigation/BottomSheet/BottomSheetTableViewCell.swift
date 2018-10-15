@@ -7,6 +7,18 @@ import UIKit
 
 @IBDesignable
 class BottomSheetTableViewCell: UITableViewCell, NibLoadable {
+    @IBInspectable var title: String? {
+        didSet {
+            titleLabel.text = title
+        }
+    }
+
+    @IBInspectable var iconImage: UIImage? {
+        didSet {
+            update()
+        }
+    }
+
     @IBOutlet private var iconImageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
 
@@ -20,15 +32,36 @@ class BottomSheetTableViewCell: UITableViewCell, NibLoadable {
         loadFromNib()
     }
 
-    @IBInspectable var title: String? {
-        didSet {
-            titleLabel.text = title
-        }
+    func highlight() {
+        isHighlighted = true
+        update()
     }
 
-    @IBInspectable var iconImage: UIImage? {
-        didSet {
-            iconImageView.image = iconImage?.withRenderingMode(.alwaysTemplate)
+    func unhighlight() {
+        isHighlighted = false
+        update()
+    }
+
+    func nibDidLoad() {
+        let selectionView = UIView()
+
+        let innerView = UIView()
+        innerView.backgroundColor = Asset.Theme.secondary.color
+        innerView.layer.cornerRadius = 4
+
+        selectionView.addSubview(innerView)
+        innerView.bindEdgesToSuperview(insetX: 8, insetY: 8)
+
+        selectedBackgroundView = selectionView
+    }
+
+    private func update() {
+        if isHighlighted {
+            iconImageView.image = iconImage?.templateImage(color: Asset.Text.lightText.color)
+            titleLabel.textColor = Asset.Text.lightText.color
+        } else {
+            iconImageView.image = iconImage?.templateImage(color: Asset.Text.grayText.color)
+            titleLabel.textColor = Asset.Text.darkText.color
         }
     }
 }
