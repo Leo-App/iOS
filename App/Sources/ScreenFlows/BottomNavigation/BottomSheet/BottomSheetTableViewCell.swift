@@ -46,7 +46,7 @@ class BottomSheetTableViewCell: UITableViewCell, NibLoadable {
         let selectionView = UIView()
 
         let innerView = UIView()
-        innerView.backgroundColor = Asset.Theme.secondary.color
+        innerView.backgroundColor = Color.Theme.secondary
         innerView.layer.cornerRadius = 4
 
         selectionView.addSubview(innerView)
@@ -57,11 +57,11 @@ class BottomSheetTableViewCell: UITableViewCell, NibLoadable {
 
     private func update() {
         if isHighlighted {
-            iconImageView.image = iconImage?.templateImage(color: Asset.Text.lightText.color)
-            titleLabel.textColor = Asset.Text.lightText.color
+            iconImageView.image = iconImage?.templateImage(color: Color.Text.lightText)
+            titleLabel.textColor = Color.Text.lightText
         } else {
-            iconImageView.image = iconImage?.templateImage(color: Asset.Text.grayText.color)
-            titleLabel.textColor = Asset.Text.darkText.color
+            iconImageView.image = iconImage?.templateImage(color: Color.Text.grayText)
+            titleLabel.textColor = Color.Text.darkText
         }
     }
 }

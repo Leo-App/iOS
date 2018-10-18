@@ -33,6 +33,7 @@
 		82F2BF7220DBBA7E009D037D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82F2BF7420DBBA7E009D037D /* InfoPlist.strings */; };
 		A1013A362178EC7500AA1EF7 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1013A352178EC7500AA1EF7 /* MungoHealer.framework */; };
 		A1013A382178EC8100AA1EF7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1013A372178EC8100AA1EF7 /* PromiseKit.framework */; };
+		A1013A4B217908FE00AA1EF7 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1013A4A217908FE00AA1EF7 /* Images.swift */; };
 		A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */; };
 		A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E82160025D00140107 /* BottomSheetViewController.swift */; };
 		A10E13EB2160027000140107 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E13EA2160027000140107 /* BottomSheet.storyboard */; };
@@ -143,6 +144,8 @@
 		82F2BF7520DBBA80009D037D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1013A352178EC7500AA1EF7 /* MungoHealer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MungoHealer.framework; path = Carthage/Build/iOS/MungoHealer.framework; sourceTree = "<group>"; };
 		A1013A372178EC8100AA1EF7 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		A1013A492178F8E600AA1EF7 /* SwiftGen-Images.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SwiftGen-Images.stencil"; sourceTree = "<group>"; };
+		A1013A4A217908FE00AA1EF7 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationFlowController.swift; sourceTree = "<group>"; };
 		A10E13E82160025D00140107 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		A10E13EA2160027000140107 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
@@ -313,6 +316,7 @@
 				A15C138D215A4B6E00F1AA25 /* LICENSE */,
 				A146F9DE20E0385B008BBA45 /* README.md */,
 				A146F9DA20E032C0008BBA45 /* SwiftGen-Colors.stencil */,
+				A1013A492178F8E600AA1EF7 /* SwiftGen-Images.stencil */,
 			);
 			name = RootFiles;
 			sourceTree = "<group>";
@@ -369,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				823F74381ED8679D0022317D /* Colors.swift */,
+				A1013A4A217908FE00AA1EF7 /* Images.swift */,
 				823F74391ED8679D0022317D /* Storyboards.swift */,
 				823F743A1ED8679D0022317D /* Strings.swift */,
 			);
@@ -678,7 +683,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint --quiet\nelse\n    echo \"warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		823F74211ED8633F0022317D /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -714,7 +719,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen > /dev/null; then\n    swiftgen strings \"$PROJECT_DIR/App/Resources/en.lproj/Localizable.strings\" -t structured-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Strings.swift\"\n    swiftgen ib \"$PROJECT_DIR/App/Sources\" -t scenes-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Storyboards.swift\"\n    swiftgen xcassets \"$PROJECT_DIR/App/Resources/Colors.xcassets\" -p \"$PROJECT_DIR/SwiftGen-Colors.stencil\" -o \"$PROJECT_DIR/App/Generated/SwiftGen/Colors.swift\"\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
+			shellScript = "if which swiftgen > /dev/null; then\n    swiftgen strings \"$PROJECT_DIR/App/Resources/en.lproj/Localizable.strings\" -t structured-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Strings.swift\"\n    swiftgen ib \"$PROJECT_DIR/App/Sources\" -t scenes-swift4 -o \"$PROJECT_DIR/App/Generated/SwiftGen/Storyboards.swift\"\n    swiftgen xcassets \"$PROJECT_DIR/App/Resources/Colors.xcassets\" -p \"$PROJECT_DIR/SwiftGen-Colors.stencil\" -o \"$PROJECT_DIR/App/Generated/SwiftGen/Colors.swift\"\n    swiftgen xcassets \"$PROJECT_DIR/App/Resources/Images.xcassets\" -p \"$PROJECT_DIR/SwiftGen-Images.stencil\" -o \"$PROJECT_DIR/App/Generated/SwiftGen/Images.swift\"\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
 		};
 		823F74371ED867750022317D /* BartyCrouch */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -766,6 +771,7 @@
 				A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */,
 				82CC295720DBDB2000C61C6E /* Logger.swift in Sources */,
 				A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */,
+				A1013A4B217908FE00AA1EF7 /* Images.swift in Sources */,
 				A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
 				A182B2332175371C00303536 /* UIViewExtension.swift in Sources */,

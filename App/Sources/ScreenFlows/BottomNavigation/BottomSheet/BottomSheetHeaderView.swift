@@ -47,9 +47,9 @@ class BottomSheetHeaderView: UIView, NibLoadable {
 
     private func updateImage() {
         if highlighted {
-            imageView.image = image?.templateImage(color: Asset.Text.lightText.color)
+            imageView.image = image?.templateImage(color: Color.Text.lightText)
         } else {
-            imageView.image = image?.templateImage(color: Asset.Text.grayText.color)
+            imageView.image = image?.templateImage(color: Color.Text.grayText)
         }
     }
 }

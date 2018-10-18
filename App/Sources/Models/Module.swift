@@ -6,14 +6,14 @@
 import UIKit
 
 enum Module: String, CaseIterable {
-    case exams
-    case foodmark
     case home
-    case messenger
+    case foodmark
+    case exams
     case pinboard
+    case timetable
+    case messenger
     case substitution
     case surveys
-    case timetable
 
     var menuIconImage: UIImage {
         return UIImage(named: rawValue)!

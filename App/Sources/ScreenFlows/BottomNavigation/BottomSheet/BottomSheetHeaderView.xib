@@ -59,6 +59,13 @@
                         <fragment content="#bc-ignore!"/>
                     </attributedString>
                 </label>
+                <view alpha="0.12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-eU-Ycy">
+                    <rect key="frame" x="0.0" y="77" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FSy-vm-6YZ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" name="Accent"/>
@@ -66,7 +73,10 @@
                 <constraint firstItem="Bs0-5C-1mw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="04o-O9-U4t"/>
                 <constraint firstAttribute="trailing" secondItem="UXo-M5-3dz" secondAttribute="trailing" constant="8" id="1lv-qQ-IZ2"/>
                 <constraint firstItem="TZx-cl-em1" firstAttribute="leading" secondItem="Bs0-5C-1mw" secondAttribute="trailing" constant="16" id="Cf1-DX-YXX"/>
+                <constraint firstItem="PsR-eU-Ycy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CoO-Ot-T2m"/>
                 <constraint firstAttribute="trailing" secondItem="TZx-cl-em1" secondAttribute="trailing" constant="16" id="NKH-39-fsu"/>
+                <constraint firstAttribute="trailing" secondItem="PsR-eU-Ycy" secondAttribute="trailing" id="Rb9-ge-zmk"/>
+                <constraint firstAttribute="bottom" secondItem="PsR-eU-Ycy" secondAttribute="bottom" id="V4q-db-CW1"/>
                 <constraint firstItem="TZx-cl-em1" firstAttribute="top" secondItem="ZqE-tL-DSh" secondAttribute="bottom" constant="6" id="bwW-dx-TXK"/>
                 <constraint firstItem="ZqE-tL-DSh" firstAttribute="leading" secondItem="Bs0-5C-1mw" secondAttribute="trailing" constant="16" id="gVv-Nk-nGP"/>
                 <constraint firstItem="Bs0-5C-1mw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="mEW-cc-UvF"/>
