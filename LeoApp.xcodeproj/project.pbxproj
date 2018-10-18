@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E19FF3E2051899100773831 /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E19FF3B2051899100773831 /* Differ.framework */; };
-		2E19FF3F2051899100773831 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E19FF3C2051899100773831 /* Bond.framework */; };
-		2E19FF402051899100773831 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E19FF3D2051899100773831 /* ReactiveKit.framework */; };
 		820103AA1ED87B0600FB7007 /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820103A81ED87AE000FB7007 /* ExampleSpec.swift */; };
 		820103AC1ED87D2200FB7007 /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 823F74311ED8658E0022317D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		820103AD1ED87D2200FB7007 /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 823F74321ED8658E0022317D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -33,10 +30,9 @@
 		82CC295620DBDB2000C61C6E /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC294D20DBDB2000C61C6E /* Progress.swift */; };
 		82CC295720DBDB2000C61C6E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC294E20DBDB2000C61C6E /* Logger.swift */; };
 		82CC295820DBDB2000C61C6E /* Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC294F20DBDB2000C61C6E /* Branding.swift */; };
-		82CC295E20DBE46D00C61C6E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CC295D20DBE46D00C61C6E /* Result.framework */; };
 		82F2BF7220DBBA7E009D037D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82F2BF7420DBBA7E009D037D /* InfoPlist.strings */; };
-		82F2BF7920DBBD8F009D037D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7720DBBD8F009D037D /* Moya.framework */; };
-		82F2BF7A20DBBD8F009D037D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F2BF7820DBBD8F009D037D /* Alamofire.framework */; };
+		A1013A362178EC7500AA1EF7 /* MungoHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1013A352178EC7500AA1EF7 /* MungoHealer.framework */; };
+		A1013A382178EC8100AA1EF7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1013A372178EC8100AA1EF7 /* PromiseKit.framework */; };
 		A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */; };
 		A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E13E82160025D00140107 /* BottomSheetViewController.swift */; };
 		A10E13EB2160027000140107 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E13EA2160027000140107 /* BottomSheet.storyboard */; };
@@ -107,9 +103,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E19FF3B2051899100773831 /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
-		2E19FF3C2051899100773831 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
-		2E19FF3D2051899100773831 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 		2E288081205188AD0051EC14 /* beak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beak.swift; sourceTree = "<group>"; };
 		2E55F0BC20ABBE11000949CF /* Cartfile.ignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.ignore; sourceTree = "<group>"; };
 		820103A81ED87AE000FB7007 /* ExampleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
@@ -146,11 +139,10 @@
 		82CC294D20DBDB2000C61C6E /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		82CC294E20DBDB2000C61C6E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		82CC294F20DBDB2000C61C6E /* Branding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
-		82CC295D20DBE46D00C61C6E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		82F2BF7320DBBA7E009D037D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82F2BF7520DBBA80009D037D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		82F2BF7720DBBD8F009D037D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		82F2BF7820DBBD8F009D037D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A1013A352178EC7500AA1EF7 /* MungoHealer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MungoHealer.framework; path = Carthage/Build/iOS/MungoHealer.framework; sourceTree = "<group>"; };
+		A1013A372178EC8100AA1EF7 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		A10E13E5215FFD5300140107 /* BottomNavigationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationFlowController.swift; sourceTree = "<group>"; };
 		A10E13E82160025D00140107 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		A10E13EA2160027000140107 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
@@ -181,14 +173,10 @@
 				823F742F1ED8637B0022317D /* SwiftyBeaver.framework in Frameworks */,
 				823F742C1ED8637B0022317D /* HandyUIKit.framework in Frameworks */,
 				823F742B1ED8637B0022317D /* HandySwift.framework in Frameworks */,
-				82CC295E20DBE46D00C61C6E /* Result.framework in Frameworks */,
+				A1013A362178EC7500AA1EF7 /* MungoHealer.framework in Frameworks */,
+				A1013A382178EC8100AA1EF7 /* PromiseKit.framework in Frameworks */,
 				823F74301ED8637B0022317D /* SwiftyUserDefaults.framework in Frameworks */,
-				2E19FF3E2051899100773831 /* Differ.framework in Frameworks */,
-				2E19FF3F2051899100773831 /* Bond.framework in Frameworks */,
-				82F2BF7920DBBD8F009D037D /* Moya.framework in Frameworks */,
-				82F2BF7A20DBBD8F009D037D /* Alamofire.framework in Frameworks */,
 				823F74431ED86AB30022317D /* JGProgressHUD.framework in Frameworks */,
-				2E19FF402051899100773831 /* ReactiveKit.framework in Frameworks */,
 				823F742D1ED8637B0022317D /* Imperio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,16 +320,12 @@
 		823F74231ED863520022317D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				82F2BF7820DBBD8F009D037D /* Alamofire.framework */,
-				2E19FF3C2051899100773831 /* Bond.framework */,
-				2E19FF3B2051899100773831 /* Differ.framework */,
 				823F74251ED8637B0022317D /* HandySwift.framework */,
 				823F74261ED8637B0022317D /* HandyUIKit.framework */,
 				823F74271ED8637B0022317D /* Imperio.framework */,
 				823F74421ED86AB30022317D /* JGProgressHUD.framework */,
-				82F2BF7720DBBD8F009D037D /* Moya.framework */,
-				2E19FF3D2051899100773831 /* ReactiveKit.framework */,
-				82CC295D20DBE46D00C61C6E /* Result.framework */,
+				A1013A352178EC7500AA1EF7 /* MungoHealer.framework */,
+				A1013A372178EC8100AA1EF7 /* PromiseKit.framework */,
 				823F74291ED8637B0022317D /* SwiftyBeaver.framework */,
 				823F742A1ED8637B0022317D /* SwiftyUserDefaults.framework */,
 			);
@@ -702,16 +686,12 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Differ.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/HandySwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/HandyUIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Imperio.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/JGProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MungoHealer.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 			);
