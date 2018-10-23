@@ -9,6 +9,7 @@ import UIKit
 class BottomNavigationFlowController: InitialFlowController {
     private var bottomNavigationViewController: BottomNavigationViewController?
     private var bottomSheetViewController: BottomSheetViewController?
+    private var steppedModalPresentationManager: SteppedModalPresentationManager?
 
     override func start(from window: UIWindow) {
         bottomNavigationViewController = StoryboardScene.BottomNavigation.initialScene.instantiate()
@@ -21,10 +22,20 @@ class BottomNavigationFlowController: InitialFlowController {
 extension BottomNavigationFlowController: BottomNavigationFlowDelegate {
     func menuButtonPressed() {
         bottomSheetViewController = StoryboardScene.BottomSheet.initialScene.instantiate()
+        bottomSheetViewController?.flowDelegate = self
+        steppedModalPresentationManager = SteppedModalPresentationManager()
+        bottomSheetViewController?.transitioningDelegate = steppedModalPresentationManager
+        bottomSheetViewController?.modalPresentationStyle = .custom
         bottomNavigationViewController?.present(bottomSheetViewController!, animated: true, completion: nil)
     }
 
     func profileButtonPressed() {
         // TODO: not yet implemented
+    }
+}
+
+extension BottomNavigationFlowController: BottomSheetFlowDelegate {
+    func openCloseButtonPressed() {
+        steppedModalPresentationManager?.presentationController?.fullScreen.toggle()
     }
 }

@@ -5,21 +5,25 @@
 
 import UIKit
 
+protocol BottomSheetFlowDelegate: class {
+    func openCloseButtonPressed()
+}
+
 class BottomSheetViewController: UIViewController {
-    var fullScreen: Bool = false {
-        didSet {
-            if fullScreen {
-                view.frame.origin.y = max(UIApplication.shared.keyWindow!.safeAreaInsets.top, UIApplication.shared.statusBarFrame.height)
-            } else {
-                view.frame.origin.y = 0
-            }
-        }
-    }
+    weak var flowDelegate: BottomSheetFlowDelegate?
+
+    @IBOutlet private var headerView: BottomSheetHeaderView!
 
     @IBOutlet private var tableView: UITableView! {
         didSet {
             tableView.separatorStyle = .none
         }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        headerView.delegate = self
     }
 }
 
@@ -61,11 +65,23 @@ extension BottomSheetViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as? BottomSheetTableViewCell
         cell?.highlight()
 
-        fullScreen.toggle() // TODO: only for testing
+        // TODO: not yet implemented
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? BottomSheetTableViewCell
         cell?.unhighlight()
+    }
+}
+
+extension BottomSheetViewController: BottomSheetHeaderViewDelegate {
+    func openCloseButtonPressed() {
+        flowDelegate?.openCloseButtonPressed()
+    }
+}
+
+extension BottomSheetViewController: SteppedModalPresentable {
+    func steppedModalDidUpdate(fullScreen: Bool) {
+        headerView.fullScreen = fullScreen
     }
 }

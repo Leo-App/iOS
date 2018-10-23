@@ -45,6 +45,8 @@
 		A138FDDF215A6FB9002E9F10 /* BottomNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A138FDDE215A6FB9002E9F10 /* BottomNavigation.storyboard */; };
 		A182B22E21752AE800303536 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182B22D21752AE800303536 /* UIImageExtension.swift */; };
 		A182B2332175371C00303536 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182B2322175371C00303536 /* UIViewExtension.swift */; };
+		A18F2883217F9ACF00524B1E /* SteppedModalPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */; };
+		A18F2885217F9E5200524B1E /* SteppedModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F2884217F9E5200524B1E /* SteppedModalPresentationController.swift */; };
 		A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */; };
 		A1ED16CC2169028100C4C317 /* BottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */; };
 		A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16CF2169133500C4C317 /* ModuleManager.swift */; };
@@ -162,6 +164,8 @@
 		A15C138D215A4B6E00F1AA25 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A182B22D21752AE800303536 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A182B2322175371C00303536 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppedModalPresentationManager.swift; sourceTree = "<group>"; };
+		A18F2884217F9E5200524B1E /* SteppedModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppedModalPresentationController.swift; sourceTree = "<group>"; };
 		A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
 		A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTableViewCell.xib; sourceTree = "<group>"; };
 		A1ED16CF2169133500C4C317 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
@@ -471,6 +475,7 @@
 				A10E13F021600EF000140107 /* NibLoadable.swift */,
 				82CC294D20DBDB2000C61C6E /* Progress.swift */,
 				A15C138E215A4BF300F1AA25 /* Extensions */,
+				A18F2881217F9AB300524B1E /* SteppedModalPresentation */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -521,6 +526,15 @@
 				A182B2322175371C00303536 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A18F2881217F9AB300524B1E /* SteppedModalPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				A18F2884217F9E5200524B1E /* SteppedModalPresentationController.swift */,
+				A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */,
+			);
+			path = SteppedModalPresentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -760,6 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18F2883217F9ACF00524B1E /* SteppedModalPresentationManager.swift in Sources */,
 				823F743C1ED8679D0022317D /* Storyboards.swift in Sources */,
 				A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */,
 				A1ED16D22169139800C4C317 /* Module.swift in Sources */,
@@ -771,6 +786,7 @@
 				A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */,
 				82CC295720DBDB2000C61C6E /* Logger.swift in Sources */,
 				A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */,
+				A18F2885217F9E5200524B1E /* SteppedModalPresentationController.swift in Sources */,
 				A1013A4B217908FE00AA1EF7 /* Images.swift in Sources */,
 				A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,

@@ -5,6 +5,10 @@
 
 import UIKit
 
+protocol BottomSheetHeaderViewDelegate: class {
+    func openCloseButtonPressed()
+}
+
 @IBDesignable
 class BottomSheetHeaderView: UIView, NibLoadable {
     @IBInspectable var title: String? {
@@ -19,21 +23,20 @@ class BottomSheetHeaderView: UIView, NibLoadable {
         }
     }
 
-    @IBInspectable var image: UIImage? {
+    @IBInspectable var image: UIImage?
+
+    @IBInspectable var fullScreen: Bool = false {
         didSet {
-            updateImage()
+            updateOpenCloseButton()
         }
     }
 
-    @IBInspectable var highlighted: Bool = false {
-        didSet {
-            updateImage()
-        }
-    }
+    weak var delegate: BottomSheetHeaderViewDelegate?
 
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subtitleLabel: UILabel!
+    @IBOutlet private var openCloseButton: UIButton!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,11 +48,15 @@ class BottomSheetHeaderView: UIView, NibLoadable {
         loadFromNib()
     }
 
-    private func updateImage() {
-        if highlighted {
-            imageView.image = image?.templateImage(color: Color.Text.lightText)
+    @IBAction private func openCloseButtonPressed() {
+        delegate?.openCloseButtonPressed()
+    }
+
+    private func updateOpenCloseButton() {
+        if fullScreen {
+            openCloseButton.setImage(Image.BottomNavigation.sheetClose, for: .normal)
         } else {
-            imageView.image = image?.templateImage(color: Color.Text.grayText)
+            openCloseButton.setImage(Image.BottomNavigation.sheetOpen, for: .normal)
         }
     }
 }
