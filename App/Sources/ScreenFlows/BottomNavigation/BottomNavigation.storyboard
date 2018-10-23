@@ -4,17 +4,16 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bottom Navigation Controller-->
+        <!--Bottom Navigation View Controller-->
         <scene sceneID="LLZ-QM-G3u">
             <objects>
-                <viewController id="kw1-TP-EzW" customClass="BottomNavigationController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kw1-TP-EzW" customClass="BottomNavigationViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eEe-rN-v9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +28,9 @@
                                             <constraint firstAttribute="width" constant="40" id="JrL-iI-097"/>
                                         </constraints>
                                         <state key="normal" image="menu"/>
+                                        <connections>
+                                            <action selector="menuButtonPressed" destination="kw1-TP-EzW" eventType="primaryActionTriggered" id="0Ga-6a-Sa6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgG-8A-kOi">
                                         <rect key="frame" x="366" y="8" width="40" height="40"/>
@@ -37,6 +39,9 @@
                                             <constraint firstAttribute="height" constant="40" id="nfM-Nh-wha"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="profile"/>
+                                        <connections>
+                                            <action selector="profileButtonPressed" destination="kw1-TP-EzW" eventType="primaryActionTriggered" id="cvo-4o-9Up"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Primary"/>

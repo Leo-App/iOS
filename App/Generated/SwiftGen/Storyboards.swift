@@ -1,3 +1,4 @@
+// swiftlint:disable all
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 // swiftlint:disable sorted_imports
@@ -6,6 +7,25 @@ import UIKit
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
+
+// MARK: - Storyboard Scenes
+
+// swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
+internal enum StoryboardScene {
+  internal enum BottomNavigation: StoryboardType {
+    internal static let storyboardName = "BottomNavigation"
+
+    internal static let initialScene = InitialSceneType<App.BottomNavigationViewController>(storyboard: BottomNavigation.self)
+  }
+  internal enum BottomSheet: StoryboardType {
+    internal static let storyboardName = "BottomSheet"
+
+    internal static let initialScene = InitialSceneType<App.BottomSheetViewController>(storyboard: BottomSheet.self)
+  }
+}
+// swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
+
+// MARK: - Implementation Details
 
 internal protocol StoryboardType {
   static var storyboardName: String { get }
@@ -18,7 +38,7 @@ internal extension StoryboardType {
   }
 }
 
-internal struct SceneType<T: Any> {
+internal struct SceneType<T: UIViewController> {
   internal let storyboard: StoryboardType.Type
   internal let identifier: String
 
@@ -31,7 +51,7 @@ internal struct SceneType<T: Any> {
   }
 }
 
-internal struct InitialSceneType<T: Any> {
+internal struct InitialSceneType<T: UIViewController> {
   internal let storyboard: StoryboardType.Type
 
   internal func instantiate() -> T {
@@ -41,32 +61,5 @@ internal struct InitialSceneType<T: Any> {
     return controller
   }
 }
-
-internal protocol SegueType: RawRepresentable { }
-
-internal extension UIViewController {
-  func perform<S: SegueType>(segue: S, sender: Any? = nil) where S.RawValue == String {
-    let identifier = segue.rawValue
-    performSegue(withIdentifier: identifier, sender: sender)
-  }
-}
-
-// swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
-internal enum StoryboardScene {
-  internal enum BottomNavigationController: StoryboardType {
-    internal static let storyboardName = "BottomNavigationController"
-
-    internal static let initialScene = InitialSceneType<App.BottomNavigationController>(storyboard: BottomNavigationController.self)
-  }
-  internal enum Main: StoryboardType {
-    internal static let storyboardName = "Main"
-
-    internal static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
-  }
-}
-
-internal enum StoryboardSegue {
-}
-// swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 
 private final class BundleToken {}
