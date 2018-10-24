@@ -51,6 +51,7 @@
 		A1ED16CC2169028100C4C317 /* BottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */; };
 		A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16CF2169133500C4C317 /* ModuleManager.swift */; };
 		A1ED16D22169139800C4C317 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16D12169139800C4C317 /* Module.swift */; };
+		A1F099AF21810C4E007CCF9F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F099AE21810C4E007CCF9F /* ErrorHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +171,7 @@
 		A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTableViewCell.xib; sourceTree = "<group>"; };
 		A1ED16CF2169133500C4C317 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
 		A1ED16D12169139800C4C317 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		A1F099AE21810C4E007CCF9F /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				82CC294F20DBDB2000C61C6E /* Branding.swift */,
+				A1F099AE21810C4E007CCF9F /* ErrorHandling.swift */,
 				82CC294E20DBDB2000C61C6E /* Logger.swift */,
 				A1ED16CF2169133500C4C317 /* ModuleManager.swift */,
 				A10E13F021600EF000140107 /* NibLoadable.swift */,
@@ -791,6 +794,7 @@
 				A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
 				A182B2332175371C00303536 /* UIViewExtension.swift in Sources */,
+				A1F099AF21810C4E007CCF9F /* ErrorHandling.swift in Sources */,
 				82CC295820DBDB2000C61C6E /* Branding.swift in Sources */,
 				A10E13F121600EF000140107 /* NibLoadable.swift in Sources */,
 				A10E13E6215FFD5300140107 /* BottomNavigationFlowController.swift in Sources */,
