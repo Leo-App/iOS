@@ -10,8 +10,8 @@ github "Flinesoft/Imperio" ~> 3.0
 # Modern and extensive Apple-style progress HUD for iOS.
 github "JonasGessner/JGProgressHUD" ~> 2.0
 
-# Error Handler based on localized & healable (recoverable) errors without the overhead of NSError. 
-github "JamitLabs/MungoHealer" ~> 0.1
+# Error Handler based on localized & healable (recoverable) errors without the overhead of NSError.
+github "JamitLabs/MungoHealer" ~> 0.3
 
 # Promises for Swift & ObjC
 github "mxcl/PromiseKit" ~> 6.5

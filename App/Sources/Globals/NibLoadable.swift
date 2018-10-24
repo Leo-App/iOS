@@ -4,6 +4,7 @@
 //
 
 import HandyUIKit
+import MungoHealer
 import UIKit
 
 protocol NibLoadable: class {
@@ -25,23 +26,26 @@ extension NibLoadable where Self: UIView {
         let bundle = Bundle(for: type(of: self))
         let nibName = type(of: self).nibName
         let nib = UINib(nibName: nibName, bundle: bundle)
-        guard let views = nib.instantiate(withOwner: self, options: nil) as? [UIView] else {
-            fatalError("Could not load views from file `\(nibName).xib`.")
+
+        mungo.do {
+            guard let views = nib.instantiate(withOwner: self, options: nil) as? [UIView] else {
+                throw MungoFatalError(source: .internalInconsistency, message: "Could not load views from file `\(nibName).xib`.")
+            }
+
+            guard !views.isEmpty else {
+                throw MungoFatalError(source: .internalInconsistency, message: "No views found in file `\(nibName).xib` – please add a view.")
+            }
+
+            guard views.count <= 1 else {
+                throw MungoFatalError(source: .internalInconsistency, message: "Multiple root views found in file `\(nibName).xib` – there should be only one.")
+            }
+
+            let viewFromNib = views[0]
+            addSubview(viewFromNib)
+            viewFromNib.bindEdgesToSuperview()
+
+            nibDidLoad()
         }
-
-        guard !views.isEmpty else {
-            fatalError("No views found in file `\(nibName).xib` – please add a view.")
-        }
-
-        guard views.count <= 1 else {
-            fatalError("Multiple root views found in file `\(nibName).xib` – there should be only one.")
-        }
-
-        let viewFromNib = views[0]
-        addSubview(viewFromNib)
-        viewFromNib.bindEdgesToSuperview()
-
-        nibDidLoad()
     }
 
     func nibDidLoad() { /* no-op */ }

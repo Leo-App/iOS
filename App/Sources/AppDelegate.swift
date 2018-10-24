@@ -13,14 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var initialFlowController: InitialFlowController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        // setup global stuff
-        Logger.shared.setup()
-        Branding.shared.setupGlobalAppearance()
-
         // load window
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
 
+        // setup global stuff
+        Logger.shared.setup()
+        ErrorHandling.shared.setup(window: window!)
+        Branding.shared.setupGlobalAppearance()
+
+        // start initial flow
         initialFlowController = BottomNavigationFlowController()
         initialFlowController?.start(from: window!)
 

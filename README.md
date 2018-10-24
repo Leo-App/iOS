@@ -50,15 +50,11 @@ We recommend installing command line tools via
 * Install [BartyCrouch](https://github.com/Flinesoft/BartyCrouch) (`brew install bartycrouch`)
 * Install [Beak](https://github.com/yonaskolb) (`mint install yonaskolb/beak`)
 
-It is recommended to install forks for Carthage and SwiftLint. To do this, run:
+It is recommended to install a fork for SwiftLint. To do this, run:
 
 ```
 $ brew remove --force swiftlint
 $ mint install git@github.com:Dschee/SwiftLint.git@master swiftlint
-
-$ brew remove --force carthage
-$ brew tap Dschee/Carthage-Pro
-$ brew install carthage-pro
 ```
 
 ## Getting Started

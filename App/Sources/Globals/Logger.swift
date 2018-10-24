@@ -12,7 +12,7 @@ final class Logger {
     // MARK: - Stored Type Properties
     static let shared = Logger()
 
-    // MARK: - Instance Properties
+    // MARK: - Instance Methods
     func setup() {
         // configure console logging
         let consoleDestination = ConsoleDestination()
