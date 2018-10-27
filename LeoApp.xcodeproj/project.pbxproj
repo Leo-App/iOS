@@ -52,6 +52,14 @@
 		A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16CF2169133500C4C317 /* ModuleManager.swift */; };
 		A1ED16D22169139800C4C317 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16D12169139800C4C317 /* Module.swift */; };
 		A1F099AF21810C4E007CCF9F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F099AE21810C4E007CCF9F /* ErrorHandling.swift */; };
+		A1FCC81E2184EFF90034B9D9 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC81D2184EFF90034B9D9 /* HomeFlowController.swift */; };
+		A1FCC8202184F0040034B9D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC81F2184F0040034B9D9 /* HomeViewController.swift */; };
+		A1FCC8242184F01D0034B9D9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC8232184F01D0034B9D9 /* HomeViewModel.swift */; };
+		A1FCC8262184F1350034B9D9 /* ObservableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC8252184F1350034B9D9 /* ObservableProperty.swift */; };
+		A1FCC8282184F15E0034B9D9 /* ObservableArrayProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC8272184F15E0034B9D9 /* ObservableArrayProperty.swift */; };
+		A1FCC82A2184F1C30034B9D9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FCC8292184F1C30034B9D9 /* Home.storyboard */; };
+		A1FCC82C2184FAE80034B9D9 /* HomeShortLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC82B2184FAE80034B9D9 /* HomeShortLinkCell.swift */; };
+		A1FCC82F2184FF6D0034B9D9 /* BottomFadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FCC82E2184FF6D0034B9D9 /* BottomFadingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +180,14 @@
 		A1ED16CF2169133500C4C317 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
 		A1ED16D12169139800C4C317 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		A1F099AE21810C4E007CCF9F /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		A1FCC81D2184EFF90034B9D9 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
+		A1FCC81F2184F0040034B9D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1FCC8232184F01D0034B9D9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A1FCC8252184F1350034B9D9 /* ObservableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableProperty.swift; sourceTree = "<group>"; };
+		A1FCC8272184F15E0034B9D9 /* ObservableArrayProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArrayProperty.swift; sourceTree = "<group>"; };
+		A1FCC8292184F1C30034B9D9 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A1FCC82B2184FAE80034B9D9 /* HomeShortLinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShortLinkCell.swift; sourceTree = "<group>"; };
+		A1FCC82E2184FF6D0034B9D9 /* BottomFadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomFadingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				A138FDD5215A69FB002E9F10 /* BottomNavigation */,
+				A1FCC81C2184EFE50034B9D9 /* Home */,
 			);
 			path = ScreenFlows;
 			sourceTree = "<group>";
@@ -476,8 +493,11 @@
 				82CC294E20DBDB2000C61C6E /* Logger.swift */,
 				A1ED16CF2169133500C4C317 /* ModuleManager.swift */,
 				A10E13F021600EF000140107 /* NibLoadable.swift */,
+				A1FCC8272184F15E0034B9D9 /* ObservableArrayProperty.swift */,
+				A1FCC8252184F1350034B9D9 /* ObservableProperty.swift */,
 				82CC294D20DBDB2000C61C6E /* Progress.swift */,
 				A15C138E215A4BF300F1AA25 /* Extensions */,
+				A1FCC82D2184FF1E0034B9D9 /* IBDesignables */,
 				A18F2881217F9AB300524B1E /* SteppedModalPresentation */,
 			);
 			path = Globals;
@@ -538,6 +558,26 @@
 				A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */,
 			);
 			path = SteppedModalPresentation;
+			sourceTree = "<group>";
+		};
+		A1FCC81C2184EFE50034B9D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1FCC8292184F1C30034B9D9 /* Home.storyboard */,
+				A1FCC81D2184EFF90034B9D9 /* HomeFlowController.swift */,
+				A1FCC82B2184FAE80034B9D9 /* HomeShortLinkCell.swift */,
+				A1FCC81F2184F0040034B9D9 /* HomeViewController.swift */,
+				A1FCC8232184F01D0034B9D9 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1FCC82D2184FF1E0034B9D9 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				A1FCC82E2184FF6D0034B9D9 /* BottomFadingImageView.swift */,
+			);
+			path = IBDesignables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -660,6 +700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8298176220DBB6960021ED19 /* Colors.xcassets in Resources */,
+				A1FCC82A2184F1C30034B9D9 /* Home.storyboard in Resources */,
 				A10E13EB2160027000140107 /* BottomSheet.storyboard in Resources */,
 				82F2BF7220DBBA7E009D037D /* InfoPlist.strings in Resources */,
 				A1ED16CC2169028100C4C317 /* BottomSheetTableViewCell.xib in Resources */,
@@ -777,9 +818,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FCC8282184F15E0034B9D9 /* ObservableArrayProperty.swift in Sources */,
 				A18F2883217F9ACF00524B1E /* SteppedModalPresentationManager.swift in Sources */,
 				823F743C1ED8679D0022317D /* Storyboards.swift in Sources */,
+				A1FCC8262184F1350034B9D9 /* ObservableProperty.swift in Sources */,
 				A10E13E92160025D00140107 /* BottomSheetViewController.swift in Sources */,
+				A1FCC8242184F01D0034B9D9 /* HomeViewModel.swift in Sources */,
 				A1ED16D22169139800C4C317 /* Module.swift in Sources */,
 				823F743D1ED8679D0022317D /* Strings.swift in Sources */,
 				823F743B1ED8679D0022317D /* Colors.swift in Sources */,
@@ -788,11 +832,15 @@
 				82CC295620DBDB2000C61C6E /* Progress.swift in Sources */,
 				A138FDD9215A6B0C002E9F10 /* BottomNavigationViewController.swift in Sources */,
 				82CC295720DBDB2000C61C6E /* Logger.swift in Sources */,
+				A1FCC8202184F0040034B9D9 /* HomeViewController.swift in Sources */,
+				A1FCC82F2184FF6D0034B9D9 /* BottomFadingImageView.swift in Sources */,
+				A1FCC81E2184EFF90034B9D9 /* HomeFlowController.swift in Sources */,
 				A10E13ED2160039C00140107 /* BottomSheetHeaderView.swift in Sources */,
 				A18F2885217F9E5200524B1E /* SteppedModalPresentationController.swift in Sources */,
 				A1013A4B217908FE00AA1EF7 /* Images.swift in Sources */,
 				A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */,
 				823F74051ED84DAC0022317D /* AppDelegate.swift in Sources */,
+				A1FCC82C2184FAE80034B9D9 /* HomeShortLinkCell.swift in Sources */,
 				A182B2332175371C00303536 /* UIViewExtension.swift in Sources */,
 				A1F099AF21810C4E007CCF9F /* ErrorHandling.swift in Sources */,
 				82CC295820DBDB2000C61C6E /* Branding.swift in Sources */,

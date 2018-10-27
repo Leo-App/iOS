@@ -46,7 +46,7 @@
                         <constraint firstAttribute="height" constant="26" id="BBS-Jp-6T3"/>
                         <constraint firstAttribute="width" constant="36" id="POx-zC-vlM"/>
                     </constraints>
-                    <state key="normal" image="sheetOpen"/>
+                    <state key="normal" image="BottomNavigation/sheetOpen"/>
                     <connections>
                         <action selector="openCloseButtonPressed" destination="-1" eventType="primaryActionTriggered" id="Kb5-dy-pmv"/>
                     </connections>
@@ -94,7 +94,7 @@
         </view>
     </objects>
     <resources>
-        <image name="sheetOpen" width="36" height="26"/>
+        <image name="BottomNavigation/sheetOpen" width="36" height="26"/>
         <namedColor name="Accent">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

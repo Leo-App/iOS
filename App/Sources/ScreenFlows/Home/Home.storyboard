@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="obE-vK-Ofg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="sYo-g0-ZsX">
+            <objects>
+                <viewController id="obE-vK-Ofg" customClass="HomeViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HYf-9E-VaN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ede-4P-XlD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wY9-fQ-3Wd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-9F-aZL">
+                                <rect key="frame" x="0.0" y="448" width="375" height="152"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="SxD-3h-Nu8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SaS-OU-xHC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HomeShortLinkCell" id="Hc5-Ik-d42" customClass="HomeShortLinkCell" customModule="App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="6" width="100" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Home/home" translatesAutoresizingMaskIntoConstraints="NO" id="P1c-H0-0GX">
+                                                    <rect key="frame" x="22" y="32" width="56" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="Cae-ID-TS3"/>
+                                                        <constraint firstAttribute="width" constant="56" id="Qis-s2-MOD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Home" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44C-hf-JNK">
+                                                    <rect key="frame" x="12" y="104" width="76" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <attributedString key="userComments">
+                                                        <fragment content="#bc-ignore!"/>
+                                                    </attributedString>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" name="Primary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="44C-hf-JNK" secondAttribute="bottom" constant="8" id="Fau-Bt-DL3"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="44C-hf-JNK" secondAttribute="trailing" constant="4" id="I9u-Td-rNc"/>
+                                            <constraint firstItem="P1c-H0-0GX" firstAttribute="centerX" secondItem="Hc5-Ik-d42" secondAttribute="centerX" id="Rre-zz-aza"/>
+                                            <constraint firstItem="44C-hf-JNK" firstAttribute="top" secondItem="P1c-H0-0GX" secondAttribute="bottom" constant="16" id="gEU-4e-gy6"/>
+                                            <constraint firstItem="P1c-H0-0GX" firstAttribute="top" secondItem="Hc5-Ik-d42" secondAttribute="topMargin" constant="24" id="nYt-by-ifY"/>
+                                            <constraint firstItem="44C-hf-JNK" firstAttribute="leading" secondItem="Hc5-Ik-d42" secondAttribute="leadingMargin" constant="4" id="rol-8X-15I"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="140"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="P1c-H0-0GX" id="zIW-AL-XL8"/>
+                                            <outlet property="titleLabel" destination="44C-hf-JNK" id="QiO-hc-jhC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="obE-vK-Ofg" id="XkE-Ee-q4c"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImages/classRoom" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-73-TFS" customClass="BottomFadingImageView" customModule="App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="448"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fadingAreaHeight">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="vQO-9F-aZL" firstAttribute="leading" secondItem="wY9-fQ-3Wd" secondAttribute="leading" id="2ez-ZP-vLw"/>
+                            <constraint firstItem="vQO-9F-aZL" firstAttribute="trailing" secondItem="wY9-fQ-3Wd" secondAttribute="trailing" id="9LK-WO-vtF"/>
+                            <constraint firstItem="vr8-73-TFS" firstAttribute="leading" secondItem="wY9-fQ-3Wd" secondAttribute="leading" id="9dO-Zi-Xf8"/>
+                            <constraint firstItem="vr8-73-TFS" firstAttribute="top" secondItem="wY9-fQ-3Wd" secondAttribute="top" id="FA5-WG-8OD"/>
+                            <constraint firstItem="vQO-9F-aZL" firstAttribute="top" secondItem="vr8-73-TFS" secondAttribute="bottom" id="Idt-eG-pYg"/>
+                            <constraint firstAttribute="bottom" secondItem="vQO-9F-aZL" secondAttribute="bottom" id="m56-Nn-KpA"/>
+                            <constraint firstAttribute="trailing" secondItem="vr8-73-TFS" secondAttribute="trailing" id="zud-2c-h3v"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="vr8-73-TFS" id="jme-VN-Iy1"/>
+                        <outlet property="collectionViewFlowLayout" destination="SaS-OU-xHC" id="uIT-u3-7Gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dda-qs-xd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="15.292353823088456"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImages/classRoom" width="376" height="564"/>
+        <image name="Home/home" width="56" height="56"/>
+        <namedColor name="Background">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

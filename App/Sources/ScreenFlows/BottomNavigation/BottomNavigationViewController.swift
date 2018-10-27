@@ -12,6 +12,18 @@ protocol BottomNavigationFlowDelegate: class {
 
 class BottomNavigationViewController: UIViewController {
     weak var flowDelegate: BottomNavigationFlowDelegate?
+    var presentedView: UIView? {
+        didSet {
+            if let presentedView = presentedView {
+                containerView.addSubview(presentedView)
+                presentedView.bindEdgesToSuperview()
+            } else {
+                oldValue?.removeFromSuperview()
+            }
+        }
+    }
+
+    @IBOutlet private var containerView: UIView!
 
     @IBAction private func menuButtonPressed() {
         flowDelegate?.menuButtonPressed()

@@ -11,6 +11,8 @@ class BottomNavigationFlowController: InitialFlowController {
     private var bottomSheetViewController: BottomSheetViewController?
     private var steppedModalPresentationManager: SteppedModalPresentationManager?
 
+    private var subFlowCtrl: FlowController?
+
     override func start(from window: UIWindow) {
         bottomNavigationViewController = StoryboardScene.BottomNavigation.initialScene.instantiate()
         window.rootViewController = bottomNavigationViewController
@@ -35,6 +37,19 @@ extension BottomNavigationFlowController: BottomNavigationFlowDelegate {
 }
 
 extension BottomNavigationFlowController: BottomSheetFlowDelegate {
+    func didSelectModule(_ module: Module) {
+        switch module {
+        case .home:
+            bottomSheetViewController?.dismiss(animated: true)
+            self.subFlowCtrl = HomeFlowController()
+            self.subFlowCtrl?.start(from: self.bottomNavigationViewController!)
+
+        default:
+            break
+            // TODO: not yet implemented
+        }
+    }
+
     func openCloseButtonPressed() {
         steppedModalPresentationManager?.presentationController?.fullScreen.toggle()
     }
