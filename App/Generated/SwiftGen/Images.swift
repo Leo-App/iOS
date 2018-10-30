@@ -20,26 +20,40 @@ extension UIImage {
 
 // MARK: - Images
 enum Image {
+  enum BackgroundImages {
+    static let classRoom = UIImage(name: "BackgroundImages/classRoom")
+  }
   enum BottomNavigation {
-    static let menu = UIImage(name: "menu")
-    static let profile = UIImage(name: "profile")
-    static let profilePlaceholder = UIImage(name: "profilePlaceholder")
-    static let sheetClose = UIImage(name: "sheetClose")
-    static let sheetOpen = UIImage(name: "sheetOpen")
+    static let menu = UIImage(name: "BottomNavigation/menu")
+    static let profile = UIImage(name: "BottomNavigation/profile")
+    static let profilePlaceholder = UIImage(name: "BottomNavigation/profilePlaceholder")
+    static let sheetClose = UIImage(name: "BottomNavigation/sheetClose")
+    static let sheetOpen = UIImage(name: "BottomNavigation/sheetOpen")
   }
   enum BottomSheet {
-    static let exams = UIImage(name: "exams")
-    static let foodmark = UIImage(name: "foodmark")
-    static let home = UIImage(name: "home")
-    static let messenger = UIImage(name: "messenger")
-    static let pinboard = UIImage(name: "pinboard")
-    static let substitution = UIImage(name: "substitution")
-    static let surveys = UIImage(name: "surveys")
-    static let timetable = UIImage(name: "timetable")
+    static let exams = UIImage(name: "BottomSheet/exams")
+    static let foodmark = UIImage(name: "BottomSheet/foodmark")
+    static let home = UIImage(name: "BottomSheet/home")
+    static let messenger = UIImage(name: "BottomSheet/messenger")
+    static let pinboard = UIImage(name: "BottomSheet/pinboard")
+    static let substitution = UIImage(name: "BottomSheet/substitution")
+    static let surveys = UIImage(name: "BottomSheet/surveys")
+    static let timetable = UIImage(name: "BottomSheet/timetable")
+  }
+  enum Home {
+    static let exams = UIImage(name: "Home/exams")
+    static let foodmark = UIImage(name: "Home/foodmark")
+    static let home = UIImage(name: "Home/home")
+    static let messenger = UIImage(name: "Home/messenger")
+    static let pinboard = UIImage(name: "Home/pinboard")
+    static let substitution = UIImage(name: "Home/substitution")
+    static let surveys = UIImage(name: "Home/surveys")
+    static let timetable = UIImage(name: "Home/timetable")
   }
   static let launchIcon = UIImage(name: "LaunchIcon")
 
   static let allImages: [UIImage] = [
+    BackgroundImages.classRoom,
     BottomNavigation.menu,
     BottomNavigation.profile,
     BottomNavigation.profilePlaceholder,
@@ -53,6 +67,14 @@ enum Image {
     BottomSheet.substitution,
     BottomSheet.surveys,
     BottomSheet.timetable,
+    Home.exams,
+    Home.foodmark,
+    Home.home,
+    Home.messenger,
+    Home.pinboard,
+    Home.substitution,
+    Home.surveys,
+    Home.timetable,
     launchIcon,
   ]
 }

@@ -22,6 +22,11 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<App.BottomSheetViewController>(storyboard: BottomSheet.self)
   }
+  internal enum Home: StoryboardType {
+    internal static let storyboardName = "Home"
+
+    internal static let initialScene = InitialSceneType<App.HomeViewController>(storyboard: Home.self)
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

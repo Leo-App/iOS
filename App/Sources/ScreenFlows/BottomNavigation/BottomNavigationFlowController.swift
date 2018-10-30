@@ -7,9 +7,13 @@ import Imperio
 import UIKit
 
 class BottomNavigationFlowController: InitialFlowController {
+    static let shared = BottomNavigationFlowController()
+
     private var bottomNavigationViewController: BottomNavigationViewController?
     private var bottomSheetViewController: BottomSheetViewController?
     private var steppedModalPresentationManager: SteppedModalPresentationManager?
+
+    private var subFlowCtrl: FlowController?
 
     override func start(from window: UIWindow) {
         bottomNavigationViewController = StoryboardScene.BottomNavigation.initialScene.instantiate()
@@ -35,7 +39,71 @@ extension BottomNavigationFlowController: BottomNavigationFlowDelegate {
 }
 
 extension BottomNavigationFlowController: BottomSheetFlowDelegate {
+    func didSelectModule(_ module: Module) {
+        bottomSheetViewController?.dismiss(animated: true)
+
+        switch module {
+        case .home:
+            subFlowCtrl = HomeFlowController()
+
+        case .pinboard:
+            subFlowCtrl = PinboardFlowController()
+
+        case .exams:
+            subFlowCtrl = ExamsFlowController()
+
+        case .foodmark:
+            subFlowCtrl = FoodmarkFlowController()
+
+        case .messenger:
+            subFlowCtrl = MessengerFlowController()
+
+        case .substitution:
+            subFlowCtrl = SubstitutionFlowController()
+
+        case .surveys:
+            subFlowCtrl = SurveysFlowController()
+
+        case .timetable:
+            subFlowCtrl = TimetableFlowController()
+        }
+
+        subFlowCtrl?.start(from: bottomNavigationViewController!)
+    }
+
     func openCloseButtonPressed() {
         steppedModalPresentationManager?.presentationController?.fullScreen.toggle()
+    }
+}
+
+extension BottomNavigationFlowController: Porter {
+    func port(using portKey: PortKey) {
+        switch portKey {
+        case .home:
+            subFlowCtrl = HomeFlowController()
+
+        case .pinboard:
+            subFlowCtrl = PinboardFlowController()
+
+        case .exams:
+            subFlowCtrl = ExamsFlowController()
+
+        case .foodmark:
+            subFlowCtrl = FoodmarkFlowController()
+
+        case .messenger:
+            subFlowCtrl = MessengerFlowController()
+
+        case .substitution:
+            subFlowCtrl = SubstitutionFlowController()
+
+        case .surveys:
+            subFlowCtrl = SurveysFlowController()
+
+        case .timetable:
+            subFlowCtrl = TimetableFlowController()
+        }
+
+        subFlowCtrl?.start(from: bottomNavigationViewController!)
     }
 }

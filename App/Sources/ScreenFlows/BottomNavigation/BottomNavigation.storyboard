@@ -27,7 +27,7 @@
                                             <constraint firstAttribute="height" constant="40" id="AS8-Ou-ICk"/>
                                             <constraint firstAttribute="width" constant="40" id="JrL-iI-097"/>
                                         </constraints>
-                                        <state key="normal" image="menu"/>
+                                        <state key="normal" image="BottomNavigation/menu"/>
                                         <connections>
                                             <action selector="menuButtonPressed" destination="kw1-TP-EzW" eventType="primaryActionTriggered" id="0Ga-6a-Sa6"/>
                                         </connections>
@@ -38,7 +38,7 @@
                                             <constraint firstAttribute="width" constant="40" id="Gbr-eX-wpb"/>
                                             <constraint firstAttribute="height" constant="40" id="nfM-Nh-wha"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="profile"/>
+                                        <state key="normal" title="Button" image="BottomNavigation/profile"/>
                                         <connections>
                                             <action selector="profileButtonPressed" destination="kw1-TP-EzW" eventType="primaryActionTriggered" id="cvo-4o-9Up"/>
                                         </connections>
@@ -89,6 +89,9 @@
                         <viewLayoutGuide key="safeArea" id="3sc-4k-PLh"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mkx-Ok-OZm"/>
+                    <connections>
+                        <outlet property="containerView" destination="UzH-qU-dg9" id="SZS-UV-9G6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBb-6E-tf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,8 +99,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menu" width="40" height="40"/>
-        <image name="profile" width="40" height="40"/>
+        <image name="BottomNavigation/menu" width="40" height="40"/>
+        <image name="BottomNavigation/profile" width="40" height="40"/>
         <namedColor name="Background">
             <color red="0.93699997663497925" green="0.93699997663497925" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

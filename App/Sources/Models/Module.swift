@@ -16,7 +16,59 @@ enum Module: String, CaseIterable {
     case surveys
 
     var menuIconImage: UIImage {
-        return UIImage(named: rawValue)!
+        switch self {
+        case .home:
+            return Image.BottomSheet.home
+
+        case .foodmark:
+            return Image.BottomSheet.foodmark
+
+        case .exams:
+            return Image.BottomSheet.exams
+
+        case .pinboard:
+            return Image.BottomSheet.pinboard
+
+        case .timetable:
+            return Image.BottomSheet.timetable
+
+        case .messenger:
+            return Image.BottomSheet.messenger
+
+        case .substitution:
+            return Image.BottomSheet.substitution
+
+        case .surveys:
+            return Image.BottomSheet.surveys
+        }
+    }
+
+    var homeIconImage: UIImage {
+        switch self {
+        case .home:
+            return Image.Home.home
+
+        case .foodmark:
+            return Image.Home.foodmark
+
+        case .exams:
+            return Image.Home.exams
+
+        case .pinboard:
+            return Image.Home.pinboard
+
+        case .timetable:
+            return Image.Home.timetable
+
+        case .messenger:
+            return Image.Home.messenger
+
+        case .substitution:
+            return Image.Home.substitution
+
+        case .surveys:
+            return Image.Home.surveys
+        }
     }
 
     var name: String {
@@ -46,6 +98,34 @@ enum Module: String, CaseIterable {
 
         case .timetable:
             return localL10n.Timetable.name
+        }
+    }
+
+    var portKey: PortKey {
+        switch self {
+        case .exams:
+            return .exams
+
+        case .foodmark:
+            return .foodmark
+
+        case .home:
+            return .home
+
+        case .messenger:
+            return .messenger
+
+        case .pinboard:
+            return .pinboard
+
+        case .substitution:
+            return .substitution
+
+        case .surveys:
+            return .surveys
+
+        case .timetable:
+            return .timetable
         }
     }
 }

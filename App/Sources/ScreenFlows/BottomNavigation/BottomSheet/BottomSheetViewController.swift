@@ -7,6 +7,7 @@ import UIKit
 
 protocol BottomSheetFlowDelegate: class {
     func openCloseButtonPressed()
+    func didSelectModule(_ module: Module)
 }
 
 class BottomSheetViewController: UIViewController {
@@ -65,7 +66,7 @@ extension BottomSheetViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as? BottomSheetTableViewCell
         cell?.highlight()
 
-        // TODO: not yet implemented
+        flowDelegate?.didSelectModule(ModuleManager.shared.activeModules[indexPath.row])
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
