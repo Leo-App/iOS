@@ -9,6 +9,7 @@ struct HomeViewModel {
     struct ShortLinkEntry {
         let icon: UIImage
         let title: String
+        let portKey: PortKey
     }
 
     let backgroundImage: UIImage

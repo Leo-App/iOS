@@ -100,4 +100,32 @@ enum Module: String, CaseIterable {
             return localL10n.Timetable.name
         }
     }
+
+    var portKey: PortKey {
+        switch self {
+        case .exams:
+            return .exams
+
+        case .foodmark:
+            return .foodmark
+
+        case .home:
+            return .home
+
+        case .messenger:
+            return .messenger
+
+        case .pinboard:
+            return .pinboard
+
+        case .substitution:
+            return .substitution
+
+        case .surveys:
+            return .surveys
+
+        case .timetable:
+            return .timetable
+        }
+    }
 }

@@ -5,6 +5,10 @@
 
 import UIKit
 
+protocol HomeShortLinkCellDelegate: class {
+    func didSelectCell(shortLinkEntry: HomeViewModel.ShortLinkEntry)
+}
+
 @IBDesignable
 class HomeShortLinkCell: UICollectionViewCell {
     @IBInspectable var cornerRadius: CGFloat = 0 {
@@ -13,6 +17,8 @@ class HomeShortLinkCell: UICollectionViewCell {
             clipsToBounds = true
         }
     }
+
+    weak var delegate: HomeShortLinkCellDelegate?
 
     var shortLinkEntry: HomeViewModel.ShortLinkEntry? {
         didSet {
@@ -23,4 +29,9 @@ class HomeShortLinkCell: UICollectionViewCell {
 
     @IBOutlet private var iconImageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var button: UIButton!
+
+    @IBAction private func didSelectCell() {
+        delegate?.didSelectCell(shortLinkEntry: shortLinkEntry!)
+    }
 }

@@ -14,11 +14,11 @@ class BottomNavigationViewController: UIViewController {
     weak var flowDelegate: BottomNavigationFlowDelegate?
     var presentedView: UIView? {
         didSet {
+            oldValue?.removeFromSuperview()
+
             if let presentedView = presentedView {
                 containerView.addSubview(presentedView)
                 presentedView.bindEdgesToSuperview()
-            } else {
-                oldValue?.removeFromSuperview()
             }
         }
     }

@@ -57,15 +57,25 @@
                                                         <fragment content="#bc-ignore!"/>
                                                     </attributedString>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIM-Q3-fp8" customClass="DarkeningButton" customModule="App" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                                    <connections>
+                                                        <action selector="didSelectCell" destination="Hc5-Ik-d42" eventType="primaryActionTriggered" id="0HP-Mc-X9X"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" name="Primary"/>
                                         <constraints>
                                             <constraint firstAttribute="bottomMargin" secondItem="44C-hf-JNK" secondAttribute="bottom" constant="8" id="Fau-Bt-DL3"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="44C-hf-JNK" secondAttribute="trailing" constant="4" id="I9u-Td-rNc"/>
+                                            <constraint firstItem="mIM-Q3-fp8" firstAttribute="top" secondItem="Hc5-Ik-d42" secondAttribute="top" id="Imj-Qs-lfc"/>
                                             <constraint firstItem="P1c-H0-0GX" firstAttribute="centerX" secondItem="Hc5-Ik-d42" secondAttribute="centerX" id="Rre-zz-aza"/>
                                             <constraint firstItem="44C-hf-JNK" firstAttribute="top" secondItem="P1c-H0-0GX" secondAttribute="bottom" constant="16" id="gEU-4e-gy6"/>
+                                            <constraint firstItem="mIM-Q3-fp8" firstAttribute="leading" secondItem="Hc5-Ik-d42" secondAttribute="leading" id="hbr-Sg-uJe"/>
+                                            <constraint firstAttribute="bottom" secondItem="mIM-Q3-fp8" secondAttribute="bottom" id="hcE-6Y-iw7"/>
                                             <constraint firstItem="P1c-H0-0GX" firstAttribute="top" secondItem="Hc5-Ik-d42" secondAttribute="topMargin" constant="24" id="nYt-by-ifY"/>
+                                            <constraint firstAttribute="trailing" secondItem="mIM-Q3-fp8" secondAttribute="trailing" id="odz-zX-17P"/>
                                             <constraint firstItem="44C-hf-JNK" firstAttribute="leading" secondItem="Hc5-Ik-d42" secondAttribute="leadingMargin" constant="4" id="rol-8X-15I"/>
                                         </constraints>
                                         <size key="customSize" width="100" height="140"/>
@@ -75,6 +85,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <outlet property="button" destination="mIM-Q3-fp8" id="yHd-qv-8qQ"/>
                                             <outlet property="iconImageView" destination="P1c-H0-0GX" id="zIW-AL-XL8"/>
                                             <outlet property="titleLabel" destination="44C-hf-JNK" id="QiO-hc-jhC"/>
                                         </connections>

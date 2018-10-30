@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Branding.shared.setupGlobalAppearance()
 
         // start initial flow
-        initialFlowController = BottomNavigationFlowController()
+        initialFlowController = BottomNavigationFlowController.shared
         initialFlowController?.start(from: window!)
 
         return true

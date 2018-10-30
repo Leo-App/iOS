@@ -5,8 +5,13 @@
 
 import UIKit
 
+protocol HomeFlowDelegate: class {
+    func didSelect(shortLinkEntry: HomeViewModel.ShortLinkEntry)
+}
+
 class HomeViewController: UIViewController {
     var viewModel: HomeViewModel! // swiftlint:disable:this implicitly_unwrapped_optional
+    weak var flowDelegate: HomeFlowDelegate?
 
     @IBOutlet private var backgroundImageView: UIImageView!
     @IBOutlet private var collectionViewFlowLayout: UICollectionViewFlowLayout!
@@ -33,6 +38,13 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeShortLinkCell", for: indexPath) as! HomeShortLinkCell
         cell.shortLinkEntry = viewModel.shortLinkEntries[indexPath.item]
+        cell.delegate = self
         return cell
+    }
+}
+
+extension HomeViewController: HomeShortLinkCellDelegate {
+    func didSelectCell(shortLinkEntry: HomeViewModel.ShortLinkEntry) {
+        flowDelegate?.didSelect(shortLinkEntry: shortLinkEntry)
     }
 }

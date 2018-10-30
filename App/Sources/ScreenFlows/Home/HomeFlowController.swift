@@ -15,9 +15,16 @@ class HomeFlowController: FlowController {
         homeViewCtrl.viewModel = HomeViewModel(
             backgroundImage: Image.BackgroundImages.classRoom,
             shortLinkEntries: ModuleManager.shared.activeModules.map { module in
-                return HomeViewModel.ShortLinkEntry(icon: module.homeIconImage, title: module.name)
+                return HomeViewModel.ShortLinkEntry(icon: module.homeIconImage, title: module.name, portKey: module.portKey)
             }
         )
+        homeViewCtrl.flowDelegate = self
         bottomNavigationViewCtrl.presentedView = homeViewCtrl.view
+    }
+}
+
+extension HomeFlowController: HomeFlowDelegate {
+    func didSelect(shortLinkEntry: HomeViewModel.ShortLinkEntry) {
+        shortLinkEntry.portKey.use(from: homeViewCtrl)
     }
 }
