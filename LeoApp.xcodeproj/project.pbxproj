@@ -423,15 +423,15 @@
 		8298175B20DBB5C00021ED19 /* ScreenFlows */ = {
 			isa = PBXGroup;
 			children = (
-				A1F3FDCD2188E9F600FA256E /* Exams */,
-				A1F3FDC22188E95700FA256E /* Surveys */,
-				A1F3FDC12188E95000FA256E /* Substitution */,
-				A1F3FDC02188E94B00FA256E /* Messenger */,
-				A1F3FDBF2188E94500FA256E /* Timetable */,
-				A1F3FDBE2188E92B00FA256E /* Foodmark */,
-				A1F3FDBB2188E87000FA256E /* Pinboard */,
 				A138FDD5215A69FB002E9F10 /* BottomNavigation */,
+				A1F3FDCD2188E9F600FA256E /* Exams */,
+				A1F3FDBE2188E92B00FA256E /* Foodmark */,
 				A1FCC81C2184EFE50034B9D9 /* Home */,
+				A1F3FDC02188E94B00FA256E /* Messenger */,
+				A1F3FDBB2188E87000FA256E /* Pinboard */,
+				A1F3FDC12188E95000FA256E /* Substitution */,
+				A1F3FDC22188E95700FA256E /* Surveys */,
+				A1F3FDBF2188E94500FA256E /* Timetable */,
 			);
 			path = ScreenFlows;
 			sourceTree = "<group>";

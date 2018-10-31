@@ -20,6 +20,7 @@ class BottomNavigationFlowController: InitialFlowController {
         window.rootViewController = bottomNavigationViewController
 
         bottomNavigationViewController?.flowDelegate = self
+        port(using: PortKey.home)
     }
 }
 
