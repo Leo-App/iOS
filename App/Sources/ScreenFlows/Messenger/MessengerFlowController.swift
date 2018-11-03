@@ -7,13 +7,13 @@ import Imperio
 import UIKit
 
 class MessengerFlowController: FlowController {
-    var viewCtrl: UIViewController!
+    var viewCtrl: UIViewController?
 
     override func start(from presentingViewController: UIViewController) {
         viewCtrl = UIViewController()
-        viewCtrl.view.backgroundColor = UIColor.blue
+        viewCtrl?.view.backgroundColor = UIColor.blue
 
         let bottomNavigationViewCtrl = presentingViewController as! BottomNavigationViewController
-        bottomNavigationViewCtrl.presentedView = viewCtrl.view
+        bottomNavigationViewCtrl.presentedView = viewCtrl?.view
     }
 }

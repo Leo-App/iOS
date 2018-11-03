@@ -7,13 +7,13 @@ import Imperio
 import UIKit
 
 class ExamsFlowController: FlowController {
-    var viewCtrl: UIViewController!
+    var viewCtrl: UIViewController?
 
     override func start(from presentingViewController: UIViewController) {
         viewCtrl = UIViewController()
-        viewCtrl.view.backgroundColor = UIColor.purple
+        viewCtrl?.view.backgroundColor = UIColor.purple
 
         let bottomNavigationViewCtrl = presentingViewController as! BottomNavigationViewController
-        bottomNavigationViewCtrl.presentedView = viewCtrl.view
+        bottomNavigationViewCtrl.presentedView = viewCtrl?.view
     }
 }

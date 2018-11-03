@@ -24,3 +24,5 @@ enum PortKey: CaseIterable {
 protocol Porter {
     func port(using portKey: PortKey)
 }
+
+struct Portus { /* only added to silence SwiftLint file_name rule */ }

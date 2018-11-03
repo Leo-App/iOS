@@ -7,13 +7,13 @@ import Imperio
 import UIKit
 
 class TimetableFlowController: FlowController {
-    var viewCtrl: UIViewController!
+    var viewCtrl: UIViewController?
 
     override func start(from presentingViewController: UIViewController) {
         viewCtrl = UIViewController()
-        viewCtrl.view.backgroundColor = UIColor.green
+        viewCtrl?.view.backgroundColor = UIColor.green
 
         let bottomNavigationViewCtrl = presentingViewController as! BottomNavigationViewController
-        bottomNavigationViewCtrl.presentedView = viewCtrl.view
+        bottomNavigationViewCtrl.presentedView = viewCtrl?.view
     }
 }
