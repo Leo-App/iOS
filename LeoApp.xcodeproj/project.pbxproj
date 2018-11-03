@@ -47,6 +47,7 @@
 		A182B2332175371C00303536 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182B2322175371C00303536 /* UIViewExtension.swift */; };
 		A18F2883217F9ACF00524B1E /* SteppedModalPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */; };
 		A18F2885217F9E5200524B1E /* SteppedModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F2884217F9E5200524B1E /* SteppedModalPresentationController.swift */; };
+		A1C76ACA218E4DB7009B8938 /* TemplateIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C76AC9218E4DB7009B8938 /* TemplateIconButton.swift */; };
 		A1ED16CA2169027400C4C317 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */; };
 		A1ED16CC2169028100C4C317 /* BottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */; };
 		A1ED16D02169133500C4C317 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED16CF2169133500C4C317 /* ModuleManager.swift */; };
@@ -184,6 +185,7 @@
 		A182B2322175371C00303536 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A18F2882217F9ACF00524B1E /* SteppedModalPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppedModalPresentationManager.swift; sourceTree = "<group>"; };
 		A18F2884217F9E5200524B1E /* SteppedModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppedModalPresentationController.swift; sourceTree = "<group>"; };
+		A1C76AC9218E4DB7009B8938 /* TemplateIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateIconButton.swift; sourceTree = "<group>"; };
 		A1ED16C92169027400C4C317 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
 		A1ED16CB2169028100C4C317 /* BottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTableViewCell.xib; sourceTree = "<group>"; };
 		A1ED16CF2169133500C4C317 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
@@ -659,6 +661,7 @@
 			children = (
 				A1FCC82E2184FF6D0034B9D9 /* BottomFadingImageView.swift */,
 				A1F3FDD02188EBD700FA256E /* DarkeningButton.swift */,
+				A1C76AC9218E4DB7009B8938 /* TemplateIconButton.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -902,6 +905,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FCC8282184F15E0034B9D9 /* ObservableArrayProperty.swift in Sources */,
+				A1C76ACA218E4DB7009B8938 /* TemplateIconButton.swift in Sources */,
 				A18F2883217F9ACF00524B1E /* SteppedModalPresentationManager.swift in Sources */,
 				823F743C1ED8679D0022317D /* Storyboards.swift in Sources */,
 				A1FCC8262184F1350034B9D9 /* ObservableProperty.swift in Sources */,
